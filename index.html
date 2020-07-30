@@ -23,7 +23,6 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<script>
 			window.onload = function () {
-
 var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,  
 	title:{
@@ -52,8 +51,36 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	}]
 	});
 chart.render();
-
+var chart2 = new CanvasJS.Chart("chartContainer2", {
+	animationEnabled: true,  
+	title:{
+		text: "Deposit"
+	},
+	axisY: {
+		title: "% of total borrowings",
+		
+		suffix: "%",
+		prefix: "",
+		lineThickness: 6
+	},
+	data: [{
+		type: "splineArea",
+		color: "808080",
+		markerSize: 5,
+		xValueFormatString: "YYYY",
+		yValueFormatString: "#",
+		dataPoints: [
+			{ x: new Date(2016, 0), y: 4 },
+			{ x: new Date(2017, 0), y: 8 },
+			{ x: new Date(2018, 0), y: 12 },
+			{ x: new Date(2019, 0), y: 15 },
+			{ x: new Date(2020, 0), y: 21 },
+		]
+	}]
+	});
+chart2.render();
 }
+
 </script>
 	</head>
 
@@ -147,14 +174,12 @@ chart.render();
 					<h4>Contribution of deposit business to the overall borrowing book or the aum
 					</h4>		
 					<div id="chartContainer" style="height: 400px; width: 100%;"></div>
-					<!-- <img src="assets/graph.png" height="400vw" width="auto" alt="">	 -->
 				</section>
-				<!-- <section data-auto-animate>
-					 <img src="assets/graph.png" height="600vw" width="auto" alt="">	 
-					<h3>	hey</h3>
-					<div id="chartContainer" style="height: 500px; width: 100%;"></div>
 
-				</section> -->
+				<!-- <section style="margin-top: -6vh;" data-auto-animate>
+					<div id="chartContainer2" style="height: 500px; width: 100%;"></div> -->
+
+				</section>
 
 				<section>
 					<h4>COMPETITIVE ANALYSIS
@@ -313,6 +338,41 @@ chart.render();
 				<section> 
 				<h4>INSURANCE BUSINESS
 				</h4>
+			</section>
+
+			<section data-auto-animate=""> 
+				<h4>Pocket Insurance
+				</h4>
+			</section>
+			<section data-auto-animate=""> 
+				<h4>Pocket Insurance
+				</h4>
+				<ul class="para">
+					<li>
+						Bajaj Finance provides Pocket Insurance, a unique proposition offered by its partner companies which is extremely affordable and instantly available for the masses
+
+
+					</li>
+					<li>
+						Pocket insurances are available across varied spectrum including wellness, lifestyle, travel, health
+
+
+					</li>
+					<li>
+						Some examples are key safeguard, pilgrimage cover, dance accident cover, spectacle insurance, tetanus cover
+
+
+
+					</li>
+					<li>The premiums for these insurance covers starts as low as Rs 79/- per annum
+
+					</li>
+					<li>Past claim history, ticket size, probability of claim helps in deciding the premiums for pocket insurances  
+
+					</li>
+
+
+				</ul>
 			</section>
 
 			<section> 
