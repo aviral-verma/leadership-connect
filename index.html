@@ -21,6 +21,40 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 		<link rel="stylesheet" href="css/styles.css">
+		<script>
+			window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,  
+	title:{
+		text: "Deposit"
+	},
+	axisY: {
+		title: "% of total borrowings",
+		
+		suffix: "%",
+		prefix: "",
+		lineThickness: 6
+	},
+	data: [{
+		type: "splineArea",
+		color: "808080",
+		markerSize: 5,
+		xValueFormatString: "YYYY",
+		yValueFormatString: "#",
+		dataPoints: [
+			{ x: new Date(2016, 0), y: 4 },
+			{ x: new Date(2017, 0), y: 8 },
+			{ x: new Date(2018, 0), y: 12 },
+			{ x: new Date(2019, 0), y: 15 },
+			{ x: new Date(2020, 0), y: 21 },
+		]
+	}]
+	});
+chart.render();
+
+}
+</script>
 	</head>
 
 	<body>
@@ -112,11 +146,15 @@
 					</div>
 					<h4>Contribution of deposit business to the overall borrowing book or the aum
 					</h4>		
-					<img src="assets/graph.png" height="400vw" width="auto" alt="">	
+					<div id="chartContainer" style="height: 400px; width: 100%;"></div>
+					<!-- <img src="assets/graph.png" height="400vw" width="auto" alt="">	 -->
 				</section>
-				<section data-auto-animate>
-					<img src="assets/graph.png" height="600vw" width="auto" alt="">	
-				</section>
+				<!-- <section data-auto-animate>
+					 <img src="assets/graph.png" height="600vw" width="auto" alt="">	 
+					<h3>	hey</h3>
+					<div id="chartContainer" style="height: 500px; width: 100%;"></div>
+
+				</section> -->
 
 				<section>
 					<h4>COMPETITIVE ANALYSIS
@@ -235,7 +273,43 @@
 
 					</ul>
 				</section>
+				<section data-auto-animate>
+					<h4>Impact of Covid-19 and steps taken:
+					</h4>
+				</section>
+				<section style="margin-top: -8vw;" data-auto-animate>
+					<div style="margin-right: -80vw;">
+						<img height="70vh" src="assets/bajaj_logo.png" alt="">
+					</div>
+					<h4>Impact of Covid-19 and steps taken:
+					</h4>
+					<ul class="para">
+						<li>
+							Deposits not as hampered as loans due to Covid-19
 
+						</li>
+						<li>
+							60-70% of normal deposit functions active during Covid-19 period
+
+						</li>
+						<li>
+							Compared to April 30-40%, now deposits make nearly (70/17 ???)% of our business
+
+
+						</li>
+						<li>Normal business of 700 crores in retail deposit to resume from this month (August)
+						</li>
+						<li>Stopped corporate deposits (flipkart, amazon) (because of high liquidity, average tenure 12 months)
+						</li>
+						<li>Fully digitalized retail deposits
+						</li>
+						<li>Customers can now take FD online through ‘Experia’ (new feature)
+						</li>
+						<li>Enabled partners with DIT process (Digital initiative transaction) with SFDC as platform 
+						</li>
+
+					</ul>
+				</section>
 				<section> 
 				<h4>INSURANCE BUSINESS
 				</h4>
@@ -284,6 +358,9 @@
 			});
 
 		</script>
+		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
 
 	</body>
 </html>

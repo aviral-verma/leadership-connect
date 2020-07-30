@@ -94,5 +94,8 @@
       "no-eq-null": 2,
       "no-unused-expressions": 0
     }
+  },
+  "dependencies": {
+    "chart.js": "^2.9.3"
   }
 }
